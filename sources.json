@@ -1,0 +1,84 @@
+[
+  {
+    "name": "OpenAI Blog",
+    "description": "La fonte ufficiale per annunci, ricerche e approfondimenti sui modelli di punta come GPT e Sora, direttamente dal laboratorio che guida l'innovazione del settore.",
+    "site_url": "https://openai.com/blog",
+    "feed_url": "https://openai.com/news/rss.xml",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "Google DeepMind",
+    "description": "Il blog del team di ricerca AI di Google, dove vengono pubblicati articoli su scoperte rivoluzionarie, dall'apprendimento per rinforzo alla robotica e alle loro applicazioni scientifiche.",
+    "site_url": "https://deepmind.google/blog",
+    "feed_url": "https://deepmind.google/blog/rss.xml",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "MIT Technology Review (AI)",
+    "description": "Una delle più autorevoli testate giornalistiche su business e tecnologia, con una sezione dedicata all'impatto dell'AI sulla società, l'etica e l'industria.",
+    "site_url": "https://technologyreview.com/artificial-intelligence",
+    "feed_url": "https://technologyreview.com/feed/",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "Wired Italia (AI)",
+    "description": "La versione italiana della celebre rivista, con una categoria specifica che copre le notizie e le tendenze dell'intelligenza artificiale in Italia e nel mondo.",
+    "site_url": "https://wired.it/topic/intelligenza-artificiale/",
+    "feed_url": "https://www.wired.it/feed/rss",
+    "enabled": true,
+    "stealth": false,
+    "include_categories": ["Intelligenza artificiale"]
+  },
+  {
+    "name": "MarkTechPost",
+    "description": "Specializzato in notizie su machine learning, deep learning e data science, con un focus su articoli che rendono la ricerca accademica più accessibile a tutti.",
+    "site_url": "https://marktechpost.com",
+    "feed_url": "https://marktechpost.com/feed/",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "Towards Data Science",
+    "description": "Una vasta community su Medium dove esperti e appassionati condividono tutorial pratici, analisi approfondite e casi studio su intelligenza artificiale e data science.",
+    "site_url": "https://towardsdatascience.com",
+    "feed_url": "https://medium.com/feed/towards-data-science",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "BAIR Blog",
+    "description": "Il blog del laboratorio di ricerca sull'AI di Berkeley (BAIR), ideale per approfondimenti accademici sulle ultime scoperte in computer vision, NLP e robotica.",
+    "site_url": "https://bair.berkeley.edu/blog/",
+    "feed_url": "https://bair.berkeley.edu/blog/feed.xml",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "Machine Learning Mastery",
+    "description": "Gestito da Jason Brownlee, è una risorsa eccellente per sviluppatori che cercano tutorial pratici e guide passo-passo per applicare il machine learning a problemi complessi.",
+    "site_url": "https://machinelearningmastery.com",
+    "feed_url": "https://feeds.feedburner.com/MachineLearningMastery",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "AI Trends",
+    "description": "Focalizzato sul lato business e enterprise dell'intelligenza artificiale, offre analisi di mercato, strategie di adozione e casi studio sull'impatto dell'AI nelle aziende.",
+    "site_url": "https://aitrends.com",
+    "feed_url": "https://aitrends.com/feed/",
+    "enabled": true,
+    "stealth": false,
+    "use_feed_content": true
+  },
+  {
+    "name": "Andrej Karpathy's Blog",
+    "description": "Scritto da una delle figure più influenti del settore, offre spiegazioni profonde e dettagliate su reti neurali e LLM, partendo dai principi fondamentali.",
+    "site_url": "https://karpathy.github.io",
+    "feed_url": "https://karpathy.github.io/feed.xml",
+    "enabled": true,
+    "stealth": false
+  }
+]

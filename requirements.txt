@@ -1,0 +1,4 @@
+feedparser
+trafilatura
+requests
+scrapling[fetchers]

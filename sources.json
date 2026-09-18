@@ -30,7 +30,9 @@
     "feed_url": "https://www.wired.it/feed/rss",
     "enabled": true,
     "stealth": false,
-    "include_categories": ["Intelligenza artificiale"]
+    "include_categories": [
+      "Intelligenza artificiale"
+    ]
   },
   {
     "name": "MarkTechPost",
@@ -80,5 +82,299 @@
     "feed_url": "https://karpathy.github.io/feed.xml",
     "enabled": true,
     "stealth": false
+  },
+  {
+    "name": "Meta Engineering (AI)",
+    "description": "Il blog engineering di Meta (ai.meta.com non ha un feed RSS): filtrato sulle categorie AI Research e ML Applications.",
+    "site_url": "https://engineering.fb.com/",
+    "feed_url": "https://engineering.fb.com/feed/",
+    "enabled": true,
+    "stealth": false,
+    "include_categories": [
+      "AI Research",
+      "ML Applications"
+    ]
+  },
+  {
+    "name": "Google AI Blog",
+    "description": "Il blog lato prodotto dell'AI di Google (Gemini, NotebookLM, AI nel Search e negli strumenti consumer), complementare al blog più scientifico di DeepMind.",
+    "site_url": "https://blog.google/technology/ai/",
+    "feed_url": "https://blog.google/technology/ai/rss/",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "Microsoft Research",
+    "description": "Il blog della divisione ricerca di Microsoft: articoli su modelli, sistemi, interazione uomo-macchina e applicazioni scientifiche dell'AI.",
+    "site_url": "https://www.microsoft.com/en-us/research/blog/",
+    "feed_url": "https://www.microsoft.com/en-us/research/feed/",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "NVIDIA Technical Blog",
+    "description": "Blog tecnico per sviluppatori: tutorial su GPU, CUDA, inferenza e ottimizzazione dei modelli, con guide pratiche e casi d'uso industriali.",
+    "site_url": "https://developer.nvidia.com/blog/",
+    "feed_url": "https://developer.nvidia.com/blog/feed/",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "Apple Machine Learning Research",
+    "description": "Le pubblicazioni di ricerca ML di Apple, con focus su modelli efficienti on-device e privacy. Scritte dai ricercatori, in formato accessibile.",
+    "site_url": "https://machinelearning.apple.com/",
+    "feed_url": "https://machinelearning.apple.com/rss.xml",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "EleutherAI Blog",
+    "description": "Il blog del collettivo di ricerca open-source EleutherAI: interpretabilità, valutazione dei modelli e retroscena tecnici dei LLM open.",
+    "site_url": "https://blog.eleuther.ai/",
+    "feed_url": "https://blog.eleuther.ai/index.xml",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "Hugging Face Blog",
+    "description": "Il cuore dell'ecosistema open-source: tutorial su fine-tuning, quantizzazione, diffusione e nuovi modelli, con codice pronto all'uso.",
+    "site_url": "https://huggingface.co/blog",
+    "feed_url": "https://huggingface.co/blog/feed.xml",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "Lil'Log (Lilian Weng)",
+    "description": "Blog personale di Lilian Weng (ex OpenAI): approfondimenti enciclopedici e rigorosi su architetture, agenti, RL e sicurezza dei modelli.",
+    "site_url": "https://lilianweng.github.io/",
+    "feed_url": "https://lilianweng.github.io/index.xml",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "Jay Alammar",
+    "description": "Autore delle celebri spiegazioni illustrate di Transformer e GPT: visualizzazioni chiare dei concetti fondamentali dei modelli linguistici.",
+    "site_url": "https://jalammar.github.io/",
+    "feed_url": "https://jalammar.github.io/feed.xml",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "Simon Willison's Weblog",
+    "description": "Uno dei blog più letti sull'uso pratico dei LLM: prompt engineering, agenti, strumenti a riga di comando e analisi critiche dei nuovi rilasci.",
+    "site_url": "https://simonwillison.net/",
+    "feed_url": "https://simonwillison.net/atom/everything/",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "Chip Huyen",
+    "description": "Autrice di 'AI Engineering': saggi approfonditi su valutazione dei modelli, ML systems design e carriere nell'AI, con taglio ingegneristico.",
+    "site_url": "https://huyenchip.com/",
+    "feed_url": "https://huyenchip.com/feed.xml",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "fast.ai",
+    "description": "Il blog di Jeremy Howard e del team fast.ai: ricerca applicata, corsi e riflessioni su come rendere il deep learning accessibile a tutti.",
+    "site_url": "https://www.fast.ai/",
+    "feed_url": "https://www.fast.ai/index.xml",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "Eugene Yan",
+    "description": "Blog personale focalizzato su ML applicato: pattern per sistemi LLM in produzione, valutazioni, RAG e raccomandazioni, basati su esperienza sul campo.",
+    "site_url": "https://eugeneyan.com/",
+    "feed_url": "https://eugeneyan.com/rss/",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "The Gradient",
+    "description": "Rivista digitale nata a Stanford: saggi lunghi e articoli di analisi sullo stato della ricerca AI, scritti da ricercatori per un pubblico tecnico.",
+    "site_url": "https://thegradient.pub/",
+    "feed_url": "https://thegradient.pub/rss/",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "SemiAnalysis",
+    "description": "Analisi profonde su hardware AI, supply chain dei chip e costi di addestramento dei modelli: il riferimento per capire l'infrastruttura dietro l'AI.",
+    "site_url": "https://semianalysis.com/",
+    "feed_url": "https://semianalysis.com/feed",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "Ahead of AI (Sebastian Raschka)",
+    "description": "Newsletter tecnica di Sebastian Raschka: come funzionano davvero i LLM, architetture a confronto, fine-tuning e paper spiegati con chiarezza.",
+    "site_url": "https://magazine.sebastianraschka.com/",
+    "feed_url": "https://magazine.sebastianraschka.com/feed",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "Interconnects (Nathan Lambert)",
+    "description": "Newsletter di riferimento su post-training, RLHF e modelli open: analisi tecniche di chi ha lavorato in prima linea ai modelli aperti di AI2.",
+    "site_url": "https://www.interconnects.ai/",
+    "feed_url": "https://www.interconnects.ai/feed",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "Import AI (Jack Clark)",
+    "description": "Newsletter settimanale del cofondatore di Anthropic: selezione ragionata di paper e analisi delle implicazioni di policy della ricerca di frontiera.",
+    "site_url": "https://importai.substack.com/",
+    "feed_url": "https://importai.substack.com/feed",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "One Useful Thing (Ethan Mollick)",
+    "description": "Il professore di Wharton Ethan Mollick esplora con dati ed esperimenti pratici come usare l'AI nel lavoro e nell'istruzione. Evidenze, non hype.",
+    "site_url": "https://www.oneusefulthing.org/",
+    "feed_url": "https://www.oneusefulthing.org/feed",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "AI Snake Oil",
+    "description": "Narayanan e Kapoor (Princeton) smontano le esagerazioni dell'AI con rigore accademico: un contrappeso critico essenziale per una rassegna equilibrata.",
+    "site_url": "https://www.aisnakeoil.com/",
+    "feed_url": "https://www.aisnakeoil.com/feed",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "Latent Space",
+    "description": "La newsletter/podcast della comunità degli 'AI engineer': saggi e interviste su come si costruiscono davvero prodotti basati su LLM.",
+    "site_url": "https://www.latent.space/",
+    "feed_url": "https://www.latent.space/feed",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "The Algorithmic Bridge",
+    "description": "Saggi di Alberto Romero che collegano tecnica, business e società: ottimo per capire il 'perché' dietro le mosse dei grandi laboratori.",
+    "site_url": "https://www.thealgorithmicbridge.com/",
+    "feed_url": "https://www.thealgorithmicbridge.com/feed",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "Last Week in AI",
+    "description": "Riepilogo settimanale (newsletter + podcast) delle notizie AI più rilevanti, con commento equilibrato. Ideale per non perdersi le notizie importanti.",
+    "site_url": "https://lastweekin.ai/",
+    "feed_url": "https://lastweekin.ai/feed",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "KDnuggets",
+    "description": "Storica risorsa per data science e ML: tutorial, guide pratiche e panoramiche su strumenti, adatte sia a principianti che a professionisti.",
+    "site_url": "https://www.kdnuggets.com/",
+    "feed_url": "https://www.kdnuggets.com/feed",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "PyImageSearch",
+    "description": "Il blog di Adrian Rosebrock: tutorial passo-passo su computer vision, deep learning e OpenCV, con codice completo e progetti concreti.",
+    "site_url": "https://pyimagesearch.com/",
+    "feed_url": "https://pyimagesearch.com/feed/",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "PyTorch Blog",
+    "description": "Il blog ufficiale di PyTorch: nuove funzionalità del framework, tutorial su training e deployment, e casi studio dalla community.",
+    "site_url": "https://pytorch.org/blog/",
+    "feed_url": "https://pytorch.org/blog/feed/",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "TensorFlow Blog",
+    "description": "Il blog ufficiale di TensorFlow e Keras: guide pratiche, aggiornamenti sul framework e applicazioni di machine learning in produzione.",
+    "site_url": "https://blog.tensorflow.org/",
+    "feed_url": "https://blog.tensorflow.org/feeds/posts/default",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "The Decoder",
+    "description": "Testata specializzata (in inglese) che copre quotidianamente ricerca, modelli e applicazioni AI con taglio tecnico e senza sensazionalismo.",
+    "site_url": "https://the-decoder.com/",
+    "feed_url": "https://the-decoder.com/feed/",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "TechCrunch (AI)",
+    "description": "La sezione AI di TechCrunch: utile per intercettare le notizie di settore davvero rilevanti — lanci, acquisizioni e cambi di strategia dei big player.",
+    "site_url": "https://techcrunch.com/category/artificial-intelligence/",
+    "feed_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "Ars Technica (AI)",
+    "description": "La sezione AI di Ars Technica: giornalismo tecnico di alto livello, con articoli che spiegano come funzionano le tecnologie, non solo gli annunci.",
+    "site_url": "https://arstechnica.com/tag/artificial-intelligence/",
+    "feed_url": "https://arstechnica.com/tag/artificial-intelligence/feed/",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "IEEE Spectrum (AI)",
+    "description": "La rivista della IEEE: reportage approfonditi su robotica, hardware e ingegneria dell'AI, con standard giornalistico molto alto.",
+    "site_url": "https://spectrum.ieee.org/topic/artificial-intelligence/",
+    "feed_url": "https://spectrum.ieee.org/feeds/topic/artificial-intelligence.rss",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "Agenda Digitale (Intelligenza Artificiale)",
+    "description": "La sezione AI del portale italiano sull'innovazione: approfondimenti su AI Act, pubblica amministrazione, imprese e scenario italiano ed europeo.",
+    "site_url": "https://www.agendadigitale.eu/intelligenza-artificiale/",
+    "feed_url": "https://www.agendadigitale.eu/feed/",
+    "enabled": true,
+    "stealth": true,
+    "include_categories": [
+      "Intelligenza Artificiale"
+    ]
+  },
+  {
+    "name": "AI4Business",
+    "description": "Testata italiana dedicata all'applicazione dell'AI in azienda: casi d'uso, strumenti, normativa e guide operative per imprese e professionisti.",
+    "site_url": "https://www.ai4business.it/",
+    "feed_url": "https://www.ai4business.it/feed/",
+    "enabled": true,
+    "stealth": true
+  },
+  {
+    "name": "Valigia Blu",
+    "description": "Testata di giornalismo lento e verificato: articoli di approfondimento su AI, disinformazione e impatto sociale della tecnologia, in italiano.",
+    "site_url": "https://www.valigiablu.it/",
+    "feed_url": "https://www.valigiablu.it/tag/intelligenza-artificiale/feed/",
+    "enabled": true,
+    "stealth": false
+  },
+  {
+    "name": "Cybersecurity360",
+    "description": "Portale italiano di riferimento su sicurezza e diritto digitale: ottima copertura di AI Act, GDPR applicato all'AI e aspetti normativi.",
+    "site_url": "https://www.cybersecurity360.it/",
+    "feed_url": "https://www.cybersecurity360.it/feed/",
+    "enabled": true,
+    "stealth": false,
+    "include_categories": [
+      "AI",
+      "AI Act",
+      "AI generative",
+      "Intelligenza Artificiale",
+      "intelligenza arficiale"
+    ]
   }
 ]

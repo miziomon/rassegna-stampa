@@ -36,6 +36,10 @@ C:/Users/maurizio.MAVIDA/Claude/experiments/newsletter/.venv/Scripts/python.exe
 
 ## Fonti: `sources.json`
 
+Il file include **45 fonti AI testate** (blog dei laboratori, blog tecnici,
+blog personali, newsletter e testate italiane/internazionali — vedi
+CHANGELOG 0.2 per l'elenco e le note sui feed corretti/esclusi).
+
 Lista di oggetti:
 
 ```json
@@ -46,7 +50,8 @@ Lista di oggetti:
   "feed_url": "https://openai.com/news/rss.xml",
   "enabled": true,
   "stealth": false,
-  "use_feed_content": false
+  "use_feed_content": false,
+  "include_categories": ["Intelligenza artificiale"]
 }
 ```
 

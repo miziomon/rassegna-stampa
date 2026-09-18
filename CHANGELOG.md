@@ -3,6 +3,49 @@
 Tutte le modifiche rilevanti a questo progetto sono documentate in questo file.
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/it/1.0.0/).
 
+## [0.2] - 2026-09-18
+
+Ampliamento delle fonti: da 10 a 45.
+
+### Aggiunto
+
+- 35 nuove fonti AI: blog dei laboratori (Google AI, Microsoft Research,
+  NVIDIA, Apple ML, Meta Engineering), blog tecnici (Hugging Face, PyTorch,
+  TensorFlow, fast.ai, KDnuggets, PyImageSearch, EleutherAI), blog personali
+  (Simon Willison, Lilian Weng, Jay Alammar, Chip Huyen, Eugene Yan),
+  newsletter (SemiAnalysis, Raschka, Interconnects, Import AI, One Useful
+  Thing, AI Snake Oil, Latent Space, Algorithmic Bridge, Last Week in AI),
+  testate (The Decoder, TechCrunch AI, Ars Technica AI, IEEE Spectrum AI,
+  AI4Business) e testate italiane (Agenda Digitale, Valigia Blu,
+  Cybersecurity360)
+
+### Modificato
+
+- **Meta AI Blog** → sostituito con "Meta Engineering (AI)"
+  (`engineering.fb.com/feed/` con filtro su `AI Research`/`ML Applications`):
+  ai.meta.com non espone un feed RSS
+- **Agenda Digitale**: il feed di sezione non esiste; si usa il feed
+  principale con `include_categories: ["Intelligenza Artificiale"]`
+- **Valigia Blu**: feed sostituito con quello di tag AI
+  (`/tag/intelligenza-artificiale/feed/`), già specifico per tema
+- **Cybersecurity360**: aggiunto `include_categories` sui tag AI
+  (`AI`, `AI Act`, `AI generative`, `Intelligenza Artificiale`,
+  incluso il refuso `intelligenza arficiale` usato occasionalmente)
+
+### Rimosso
+
+- **Fully Connected (Weights & Biases)**: feed vuoto/dismesso, nessun URL
+  alternativo funzionante
+
+### Note
+
+- Run di verifica sulle 45 fonti: 579 articoli scaricati, 0 errori, 0
+  duplicati. Le 2 entry "vuote" di IEEE Spectrum sono link a webinar, non
+  articoli (salvate con status `empty`, non verranno riscaricate)
+- Le righe `No Cloudflare challenge found` nel log di Agenda Digitale e
+  AI4Business provengono dal logger interno di Scrapling e sono benigna
+  cosmesi: i download stealth sono andati tutti a buon fine
+
 ## [0.1] - 2026-09-18
 
 Prima versione funzionante, testata end-to-end sulle 10 fonti iniziali.

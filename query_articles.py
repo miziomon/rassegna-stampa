@@ -22,9 +22,12 @@ FILTRI
     --until DATE            Data massima, stesso formato
     --source TEXT           Fonte: substring case-insensitive su source_name.
                             Ripetibile: --source wired --source openai
+    --ids 12,34,56          Solo gli articoli con questi id (CSV). Utile per
+                            rileggere il contenuto integrale di una selezione
+                            fatta in una prima passata (fase 2 della rassegna).
     --status {ok,empty,error,all}
                             Stato estrazione (default: ok)
-    --limit N               Max righe (default: 100)
+    --limit N               Max righe (default: 100, ignorato con --count)
     --order {asc,desc}      Ordinamento per data (default: desc = piu' recenti)
 
 OUTPUT
@@ -110,14 +113,26 @@ def build_query(args) -> tuple[str, list]:
         clause = " OR ".join("LOWER(source_name) LIKE ?" for _ in args.source)
         where.append(f"({clause})")
         params.extend(f"%{s.lower()}%" for s in args.source)
+    if args.ids:
+        try:
+            ids = [int(p) for p in args.ids.split(",") if p.strip()]
+        except ValueError:
+            raise ValueError(f"--ids deve essere una lista CSV di interi: {args.ids!r}") from None
+        if ids:
+            where.append(f"id IN ({','.join('?' * len(ids))})")
+            params.extend(ids)
 
     sql = f"SELECT {', '.join(COLUMNS)} FROM articles"
     if where:
         sql += " WHERE " + " AND ".join(where)
     sql += (" ORDER BY COALESCE(published_at, fetched_at) "
             + ("ASC" if args.order == "asc" else "DESC"))
-    sql += " LIMIT ?"
-    params.append(args.limit)
+    # Nel conteggio il LIMIT falserebbe il numero; e con --mark-processed il
+    # conteggio serve proprio a marcare l'intera selezione, non i primi N.
+    count_mode = args.count or args.format == "count"
+    if not count_mode:
+        sql += " LIMIT ?"
+        params.append(args.limit)
     return sql, params
 
 
@@ -186,6 +201,7 @@ def parse_args():
     p.add_argument("--until", help="Data massima YYYY-MM-DD o ISO 8601")
     p.add_argument("--source", action="append",
                    help="Fonte (substring, case-insensitive). Ripetibile")
+    p.add_argument("--ids", help="Solo questi id articolo (CSV: 12,34,56)")
     p.add_argument("--status", choices=["ok", "empty", "error", "all"], default="ok",
                    help="Stato estrazione (default: ok)")
     p.add_argument("--limit", type=int, default=100)
@@ -214,7 +230,7 @@ def main() -> int:
     try:
         sql, params = build_query(args)
     except ValueError as e:
-        print(f"Errore nei parametri data: {e}", file=sys.stderr)
+        print(f"Errore nei parametri: {e}", file=sys.stderr)
         return 1
 
     conn = sqlite3.connect(args.db)

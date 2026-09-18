@@ -3,6 +3,21 @@
 Tutte le modifiche rilevanti a questo progetto sono documentate in questo file.
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/it/1.0.0/).
 
+## [0.3] - 2026-09-18
+
+### Aggiunto
+
+- `query_articles.py`: filtro `--ids 12,34,56` per rileggere una selezione
+  puntuale di articoli (contenuto integrale o marcatura per id). Serve alla
+  fase 2 della rassegna: prima si scorre il lotto con gli estratti, poi si
+  recuperano per id solo i candidati scelti.
+
+### Corretto
+
+- Con `--count` (o `--format count`) il `LIMIT` non si applica più: il
+  conteggio riflette l'intera selezione e `--mark-processed --format count`
+  marca tutte le righe filtrate, non solo le prime 100.
+
 ## [0.2] - 2026-09-18
 
 Ampliamento delle fonti: da 10 a 45.

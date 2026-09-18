@@ -38,6 +38,9 @@ progetto: `.venv/Scripts/python`).
 .venv/Scripts/python query_articles.py --source openai --source deepmind \
     --format json --full-content
 
+# Fase 2: rileggere il contenuto integrale di una selezione fatta per id
+.venv/Scripts/python query_articles.py --ids 12,34,56 --format json --full-content
+
 # Marchiare come processati gli articoli appena usati (stessa selezione!)
 .venv/Scripts/python query_articles.py --since 2026-09-11 --mark-processed --format count
 
@@ -53,6 +56,7 @@ progetto: `.venv/Scripts/python`).
 | `--status {ok,empty,error,all}` | esito estrazione | `ok` |
 | `--since` / `--until` | data (YYYY-MM-DD o ISO), su `published_at` (fallback `fetched_at`) | — |
 | `--source TEXT` | substring case-insensitive, ripetibile (OR) | — |
+| `--ids 12,34` | solo gli id indicati (CSV), combinabile con gli altri filtri | — |
 | `--limit N` | max righe | 100 |
 | `--order {asc,desc}` | per data | `desc` |
 | `--format` | table, json, jsonl, csv, markdown, count | `table` |

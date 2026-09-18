@@ -80,7 +80,8 @@ Lista di oggetti:
 ```
 
 Filtri disponibili: `--processed`, `--status`, `--since`/`--until`,
-`--source` (ripetibile), `--limit`, `--order`, `--format`
+`--source` (ripetibile), `--ids` (CSV, per rileggere una selezione puntuale),
+`--limit`, `--order`, `--format`
 (table/json/jsonl/csv/markdown/count), `--full-content`,
 `--mark-processed`. Documentazione completa per uso umano e da agente:
 [`SKILL.md`](./SKILL.md) e `query_articles.py --help`.
